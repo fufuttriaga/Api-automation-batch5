@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-20T14:41:23.099Z",
+    "end": "2024-08-20T14:41:24.873Z",
+    "duration": 1774,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4ff6b377-683a-472a-8801-543db1cc8534",
+      "title": "",
+      "fullFile": "C:\\Users\\Ega Nuansa\\Api-automation-batch5\\test\\testsesi7.js",
+      "file": "\\test\\testsesi7.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bd363f9f-59d5-490a-8e77-754032f046e5",
+          "title": "API Test for \"reqres.in\"",
+          "fullFile": "C:\\Users\\Ega Nuansa\\Api-automation-batch5\\test\\testsesi7.js",
+          "file": "\\test\\testsesi7.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test - GET all list",
+              "fullTitle": "API Test for \"reqres.in\" Test - GET all list",
+              "timedOut": false,
+              "duration": 441,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request (\"https://reqres.in/api/unknown\").get(\"list\")\nconsole.log(response.statusCode)\nconst schemaPath = \"resources/JsonSchema/post-object-schema.json\"\nconst jsonSchema =  JSON.parse(fs.readFileSync(schemaPath,`utf-8`))\nassert.jsonSchema(response.body, jsonSchema)",
+              "err": {},
+              "uuid": "aaa056b0-4cd4-460f-8470-f35ba6ab05c0",
+              "parentUUID": "bd363f9f-59d5-490a-8e77-754032f046e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test - POST  Store list",
+              "fullTitle": "API Test for \"reqres.in\" Test - POST  Store list",
+              "timedOut": false,
+              "duration": 587,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request (\"https://reqres.in/api/unknown\")\n.post(\"list\")\n.send(\n    {\n        \"data\": {\n            \"id\": 2,\n            \"name\": \"fuchsia rose\",\n            \"year\": 2001,\n            \"color\": \"#C74375\",\n            \"pantone_value\": \"17-2031\"\n        },\n        \"support\": {\n            \"url\": \"https://reqres.in/#support-heading\",\n            \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n        }\n    }\n)",
+              "err": {},
+              "uuid": "32a62d01-5ca1-4a9b-9dd4-b6597de9cd6b",
+              "parentUUID": "bd363f9f-59d5-490a-8e77-754032f046e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test - PUT all list",
+              "fullTitle": "API Test for \"reqres.in\" Test - PUT all list",
+              "timedOut": false,
+              "duration": 543,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request (\"https://reqres.in/api/unknown\").get(\"list\")\nconsole.log(response.statusCode===200)\nconst schemaPath = \"resources/JsonSchema/post-object-schema.json\"\nconst jsonSchema =  JSON.parse(fs.readFileSync(schemaPath,`utf-8`))\nassert.jsonSchema(response.body, jsonSchema)",
+              "err": {},
+              "uuid": "e310f60b-abd7-4322-a7b0-f5b54c715366",
+              "parentUUID": "bd363f9f-59d5-490a-8e77-754032f046e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test - DELETE all list",
+              "fullTitle": "API Test for \"reqres.in\" Test - DELETE all list",
+              "timedOut": false,
+              "duration": 187,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request (\"https://reqres.in/api/unknown\").get(\"list\")\nconsole.log(response.statusCode===204)\nconst schemaPath = \"resources/JsonSchema/post-object-schema.json\"\nconst jsonSchema =  JSON.parse(fs.readFileSync(schemaPath,`utf-8`))\nassert.jsonSchema(response.body, jsonSchema)",
+              "err": {},
+              "uuid": "7baf31a1-40d3-41b3-9b6c-517ba7201b24",
+              "parentUUID": "bd363f9f-59d5-490a-8e77-754032f046e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aaa056b0-4cd4-460f-8470-f35ba6ab05c0",
+            "32a62d01-5ca1-4a9b-9dd4-b6597de9cd6b",
+            "e310f60b-abd7-4322-a7b0-f5b54c715366",
+            "7baf31a1-40d3-41b3-9b6c-517ba7201b24"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.7.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
